@@ -40,6 +40,8 @@ streamlit run streamlit_app/app.py
 > **Deployment note:** Streamlit Cloud is pinned to Python 3.11 via `runtime.txt` so spaCy installs successfully (Python 3.13 images fail to build `blis`).
 
 Live deployment: [Streamlit App](https://geoffominde-ai-tools-assignment-streamlit-appapp-yg4bxu.streamlit.app/)
+
+For the hosted app, set the Streamlit "Python packages" path to `requirements-streamlit.txt`, which excludes spaCy to avoid unsupported wheels on Streamlit's Python 3.13 runtime.
 ```
 
 ## Report & Presentation Guidance
@@ -61,3 +63,8 @@ streamlit
 en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
 ```
 Adjust versions as needed for your environment.
+
+If you need only the Streamlit UI locally, install the slim dependency set:
+```
+pip install -r requirements-streamlit.txt
+```
