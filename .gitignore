@@ -10,6 +10,7 @@ venv/
 # TensorFlow / Keras artifacts
 *.h5
 *.keras
+!reports/mnist_cnn_model.h5
 
 # Reports and notebooks
 *.ipynb_checkpoints/
