@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+
+# TensorFlow / Keras artifacts
+*.h5
+*.keras
+
+# Reports and notebooks
+*.ipynb_checkpoints/
+reports/*.pdf
+
+# Streamlit cache
+.streamlit/

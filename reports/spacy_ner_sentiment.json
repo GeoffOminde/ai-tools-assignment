@@ -1,0 +1,46 @@
+[
+  {
+    "review_id": "R1",
+    "product_name": "Echo Dot",
+    "brand": "Amazon",
+    "entities": [
+      {
+        "text": "Echo Dot",
+        "label": "PRODUCT"
+      },
+      {
+        "text": "Alexa",
+        "label": "ORG"
+      }
+    ],
+    "sentiment": "positive"
+  },
+  {
+    "review_id": "R2",
+    "product_name": "Kindle Paperwhite",
+    "brand": "Amazon",
+    "entities": [],
+    "sentiment": "negative"
+  },
+  {
+    "review_id": "R3",
+    "product_name": "Instant Pot Duo",
+    "brand": "Instant Brands",
+    "entities": [],
+    "sentiment": "positive"
+  },
+  {
+    "review_id": "R4",
+    "product_name": "Fire TV Stick",
+    "brand": "Amazon",
+    "entities": [],
+    "sentiment": "negative"
+  },
+  {
+    "review_id": "R5",
+    "product_name": "Sony WH-1000XM4",
+    "brand": "Sony",
+    "entities": [],
+    "sentiment": "positive"
+  }
+]
