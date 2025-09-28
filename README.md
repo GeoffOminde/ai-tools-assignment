@@ -4,19 +4,18 @@
 - **`src/`**: Python scripts for each practical task.
 - **`notebooks/`**: (optional) Jupyter notebooks for exploratory work.
 - **`data/`**: Sample datasets (e.g., `amazon_reviews_sample.jsonl`).
-- **`reports/`**: Theory write-ups, metrics, and generated artifacts.
 - **`logos/`**: Placeholder for team branding assets.
 
 ## Deliverables Checklist
 - **Theory**: `reports/theory.md` contains answers for Part 1 questions.
 - **Classical ML**: `src/iris_classifier.py` plus metrics in `reports/iris_metrics.json`.
-- **Deep Learning**: `src/mnist_cnn_tf.py` with outputs in `reports/mnist_metrics.json`, training curves, and saved model.
+- **Delivery Notes**: `src/mnist_cnn_tf.py` with outputs in `reports/mnist_metrics.json`, training curves, and saved model.
 - **NLP**: `src/spacy_ner_sentiment.py` and results in `reports/spacy_ner_sentiment.json`.
 - **Ethics & Debugging**: Analysis documented in `reports/ethics_optimization.md`.
-- **Bonus (optional)**: Streamlit interface located in `streamlit_app/` for MNIST demo.
+- **Bonus (optional)**: Streamlit interface located in `streamlit_app/` for MNIST demo. Live deployment: [Streamlit App](https://geoffominde-ai-tools-assignment-streamlit-appapp-yg4bxu.streamlit.app/)
 
 ## How to Run the Code
-```powershell
+{{ ... }}
 # Create virtual environment (recommended)
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
@@ -35,6 +34,8 @@ py -3 src\spacy_ner_sentiment.py
 
 # Bonus: Streamlit MNIST demo
 streamlit run streamlit_app/app.py
+
+Live deployment: [Streamlit App](https://geoffominde-ai-tools-assignment-streamlit-appapp-yg4bxu.streamlit.app/)
 ```
 
 ## Report & Presentation Guidance
