@@ -30,7 +30,19 @@ def load_model() -> tf.keras.Model:
         raise FileNotFoundError(
             "MNIST model file not found. Train the model with src/mnist_cnn_tf.py first."
         )
-    return tf.keras.models.load_model(MODEL_PATH)
+    try:
+        # Try loading with custom objects for potential Lambda layers
+        return tf.keras.models.load_model(
+            MODEL_PATH,
+            custom_objects={"tf": tf},
+            compile=False  # Don't compile the model as we're just doing inference
+        )
+    except Exception as e:
+        raise RuntimeError(
+            f"Failed to load the model. This might be due to version incompatibility. "
+            f"Please ensure you're using the same TensorFlow version that was used to train the model.\n"
+            f"Original error: {str(e)}"
+        )
 
 
 @st.cache_resource
