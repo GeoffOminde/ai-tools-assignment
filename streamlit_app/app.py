@@ -15,6 +15,9 @@ import json
 from pathlib import Path
 from typing import Tuple
 
+import os
+os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
+
 import numpy as np
 import streamlit as st
 import tensorflow as tf
